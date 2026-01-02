@@ -1,0 +1,12 @@
+{
+    "created_at": "2025-10-09 15:32:15",
+    "status": "error",
+    "message": "Some rows failed validation",
+    "invalid_rows": [
+        {
+            "row": 4,
+            "keyword": "00001876",
+            "error": "Invalid Account Number"
+        }
+    ]
+}

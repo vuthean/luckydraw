@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Prize extends Model
+{
+    use HasFactory;
+    protected $table = 'prize';
+    protected $fillable = [
+        'prize_id',
+        'prize_Description',
+        'prize_winQauntity',
+        'prize_spinAvailable',
+        'prize_imgPath'
+    ];
+}

@@ -1,0 +1,18 @@
+stages:
+  - compile
+  - deploy
+  - deploy-prod
+  - success_notify
+  - failed_notify
+variables:
+  PROJECT_NAME: lucky-draw
+  PROJECT_LANG: php-luckydraw
+  TELEGRAM_URL: "http://10.80.80.146:1000/bot"
+  CHAT_ID: "-1001518662516"
+  ARGO_PROJECTNAME: "lucky-draw"
+  SVC_TYPE: "frontend"
+  SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # SonarQube analysis task cache location
+  GIT_DEPTH: "0"  # Fetch all branches required by the analysis tas
+
+include: "http://integration-uat.princeplc.com.kh/static/mobile_all_in_one.yml"
+
